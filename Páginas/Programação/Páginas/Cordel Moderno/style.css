@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3:  'Sriracha', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: darkgray;
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 4em;
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2em;
+    background-size: cover;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: rgb(88, 71, 71);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black ;
+}
+
+.imagem p {
+    display: inline-block;
+    background-color: rgba(5, 5, 5, 0.507);
+    padding: 10px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.781);
+}
+
+#img1 {
+    background-image: url(pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+#img2 {
+    background-image: url(pacote-d012/imagens/background002.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 850px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 0.5em;
+        line-height: 3em;
+    }
+}
